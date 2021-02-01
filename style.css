@@ -28,7 +28,6 @@ p {
 }
 
 /* header===========*/
-
 .header {
     height: 100px;
     width: 100%;
@@ -98,6 +97,7 @@ p {
     text-shadow: #bd177a 0 0 10px;
 }
 
+/* Gradient line===========*/
 .gradients {
     position: relative;
     z-index: 1;
@@ -105,7 +105,33 @@ p {
     height: 5px;
     background: #cc1573;
     background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-    background: linear-gradient(to right, #cc1573, #5722a9); }
+    background: linear-gradient(to right, #cc1573, #5722a9); 
+}
+
+/* Block name===========*/
+.Block_name {
+    position: absolute;
+    width: 392px;
+    height: 78px;
+    bottom: -39px;
+    left: 50%;
+    margin-left: -196px;
+    z-index: 100;
+    background: #cc1573;
+    background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
+    background: linear-gradient(to right, #cc1573, #5722a9);
+    text-align: center; 
+}
+    
+.Block_name h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 0;
+    line-height: 78px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 
 /* About us===========*/
 .about_us {
@@ -125,24 +151,63 @@ p {
     position: absolute;
 }
 
-.Block_name {
-    position: absolute;
-    width: 392px;
-    height: 78px;
-    bottom: -39px;
-    left: 50%;
-    margin-left: -196px;
-    z-index: 100;
+
+/* Equipment===========*/
+.Equipment{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0c0527;
+}
+
+.Equipment__item{
+    width: 33.33333%;
+    margin: 100px 120px;
+    text-align: center;
+    padding: 0 40px; 
+    display: inline-block;
+}
+
+.Equipment__img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.Equipment__title{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* Equipment Btn===========*/
+.Equipment__btn {
     background: #cc1573;
     background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
     background: linear-gradient(to right, #cc1573, #5722a9);
-    text-align: center; }
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    min-width: 133px;
+    height: 42px;
+    color: #ffffff;
+    margin-top: 20px;
+    border: none;
+    border-radius: 0;
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
-    .Block_name h2 {
-        font-size: 36px;
-        color: #ffffff;
-        margin-bottom: 0;
-        line-height: 78px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+.Equipment__btn:hover, .Equipment__btn:focus {
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff; 
+}
