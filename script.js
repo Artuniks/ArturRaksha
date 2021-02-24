@@ -123,10 +123,36 @@ $(document).ready(function() {
 });
 
 
-    $('.button').on('click', function() {
-      $('.popus__inner').addClass('active');
-  });
+//Popup window//
+let popup = document.querySelector('.popups__inner'),
+        btn1 = document.getElementById('button1'),
+        btn2 = document.getElementById('button2'),
+        btn3 = document.getElementById('button3'),
+        btn4 = document.getElementById('button4'),
+        popupClose = document.querySelector('.close_popup');
 
-  $('.close_popup').on('click', function() {
-      $('.popus__inner').removeClass('active');
-  });
+    btn1.onclick = function () {
+      popup.style.display="flex";
+    };
+
+    btn2.onclick = function () {
+      popup.style.display="flex";
+    };
+
+    btn3.onclick = function () {
+      popup.style.display="flex";
+    };
+
+    btn4.onclick = function () {
+      popup.style.display="flex";
+    };
+
+    popupClose.onclick = function () {
+      popup.style.display="none";
+    }
+
+    window.onclick = function (e) {
+      if(e.target == popup) {
+        popup.style.display="none";
+      }
+    }

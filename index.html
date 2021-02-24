@@ -102,7 +102,7 @@
          </div>
         </div>
          </div>
-    <a href="#" class="button">Заказать</a>
+         <button type="button" class="myBtn" id="button1">Заказать</a>
     </div>
     
 <!-- Card-2 -->
@@ -142,7 +142,7 @@
      </div>
     </div>
   </div>
-  <a href="#" class="button">Заказать</a>
+  <button type="button" class="myBtn" id="button2">Заказать</a>
 </div>
 
 
@@ -184,7 +184,7 @@
          </div>
         </div>
       </div>
-      <a href="#" class="button">Заказать</a>
+      <button type="button" class="myBtn" id="button3">Заказать</a>
        </div>
 
 
@@ -228,11 +228,27 @@
          </div>
         </div>
       </div>
-      <a href="#" class="button">Заказать</a>
+      <button type="button" class="myBtn" id="button4">Заказать</a>
        </div>
     
 
 </div>
+
+
+<!-- Feedback window -->
+<div id="mypopup" class="popups__inner">
+  <div class="popup">
+    <a class="close_popup">x</a>
+    <h3>Оставить заявку</h3>
+    <p>Отправтье заявку и мы связжемся с вами</p>
+    <form autocomplete="off" action='email.php' method='post'>
+      <input type="text" name="name" placeholder="Ваше имя">
+      <input type="text" name="name" placeholder="Ваш телефон">
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
+</div>
+
 
 <!-- Slider -->
 <div class="slider-container">
@@ -355,32 +371,12 @@
     </div>
   </div>
 
-  <!-- Feedback form -->
-  <div id="mypopup" class="popups__inner">
-    <div class="popup callme__popup">
-      <a class="close_popup">x</a>
-      <h3>Перезвоните мне</h3>
-      <p>Отправтье заявку и мы связжемся с вами</p>
-      <form>
-        <input type="text" name="name" placeholder="Ваше имя">
-        <input type="text" name="name" placeholder="Ваш телефон">
-        <input type="submit" value="Отправить">
-      </form>
-    </div>
-  </div>
-
+  
 
   <!-- JS -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script  src="./script.js"></script>
 
-    <script>
-      let popup = document.getElementById('mypopup'),
-      popupToggle = document.getElementById('myBtn'),
-      popupClose = document.querySelector('.close_popup');
-
-      popupToggle.oneclick = function() {
-        popup.style.display="flex";
-      };
-    </script>
+    
+    
 </body>
 </html>
