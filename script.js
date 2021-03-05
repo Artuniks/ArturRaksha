@@ -156,3 +156,25 @@ let popup = document.querySelector('.popups__inner'),
         popup.style.display="none";
       }
     }
+
+
+    //Check spam mail//
+    let code = document.querySelector('#code'); // Получаем скрытый input
+        document.getElementById('form_btn').onclick = function(){ // Клик по кнопке отправки
+        code.value = 'NOSPAM'; // Подставляем значение в value инпута
+  };
+
+
+  //Slow scroll//
+  const anchors = document.querySelectorAll('a[href^="#"]')
+
+for(let anchor of anchors) {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault() 
+    const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+    document.querySelector(goto).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}

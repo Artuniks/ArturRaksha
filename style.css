@@ -161,7 +161,7 @@ p {
     position: absolute;
     width: 392px;
     height: 78px;
-    bottom: -1010px;
+    bottom: -1015px;
     left: 50%;
     margin-left: -196px;
     z-index: 100;
@@ -687,3 +687,61 @@ svg {
  }
  
 
+/* Footer===========*/
+.footer {
+  display: flex;
+  padding: 70px 0;
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  text-align: right;
+  }
+
+.fa {
+  font-size: 48px;
+  padding: 10px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.fa:hover {
+  opacity: 0.8;
+}
+
+.number {
+display: flex;
+font-size: 18px;
+font-family: sans-serif;
+font-weight: 700;
+align-items: center;
+}
+
+.social__item {
+ text-align: center;
+}
+
+.footer__nav {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer__link {
+  margin-left: 50px;
+  color: #000;
+  text-decoration: none;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.footer__link:hover {
+  opacity: 1;
+  transition: 0.2s;
+}

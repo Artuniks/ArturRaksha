@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>ART SOUND</title>
 </head>
@@ -11,7 +12,7 @@
 
             
 <!-- Header -->
-<header class="header">
+<header class="header" id="home">
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
@@ -19,11 +20,11 @@
             </div>
 
             <nav class="nav">
-                <a class="nav__link" href="#">Домой</a>
-                <a class="nav__link" href="#">О нас</a>
-                <a class="nav__link" href="#">Оборудование</a>
-                <a class="nav__link" href="#">Галерея</a>
-                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link" href="#home">Домой</a>
+                <a class="nav__link" href="#about">О нас</a>
+                <a class="nav__link" href="#equipment">Оборудование</a>
+                <a class="nav__link" href="#slider">Галерея</a>
+                <a class="nav__link" href="#footer">Контакты</a>
             </nav>
          </div>
     </div>
@@ -49,10 +50,11 @@
 
 
 <!-- About us -->
-<div class="about_us">
+<div class="about_us" id="about">
      <p class="about_us_text">Наша компания занимается техническим обеспечением мероприятий разного направления в городе Санкт-Петербург. Мы предоставляем техническую поддержку  банкетов, корпоративов, выступлений музыкальных коллективов. Так же в наличии имеется проекционное оборудование, что позволяет нам технически сопровождать презентации, тренинги, мастер-классы.</p>
 </div>
     
+<div class="gradients"></div>
 
 <!-- Block name equipment -->
 <div class="Block_name__equipment">
@@ -61,7 +63,7 @@
 
 
 <!-- Equipment -->
-<div class="Equipment">
+<div class="Equipment" id="equipment">
 
   
 <!-- Card-1 -->
@@ -102,7 +104,7 @@
          </div>
         </div>
          </div>
-         <button type="button" class="myBtn" id="button1">Заказать</a>
+         <button type="button" class="myBtn" id="button1">Заказать</button>
     </div>
     
 <!-- Card-2 -->
@@ -142,7 +144,7 @@
      </div>
     </div>
   </div>
-  <button type="button" class="myBtn" id="button2">Заказать</a>
+  <button type="button" class="myBtn" id="button2">Заказать</button>
 </div>
 
 
@@ -184,7 +186,7 @@
          </div>
         </div>
       </div>
-      <button type="button" class="myBtn" id="button3">Заказать</a>
+      <button type="button" class="myBtn" id="button3">Заказать</button>
        </div>
 
 
@@ -228,7 +230,7 @@
          </div>
         </div>
       </div>
-      <button type="button" class="myBtn" id="button4">Заказать</a>
+      <button type="button" class="myBtn" id="button4">Заказать</button>
        </div>
     
 
@@ -242,16 +244,17 @@
     <h3>Оставить заявку</h3>
     <p>Отправтье заявку и мы связжемся с вами</p>
     <form autocomplete="off" action='email.php' method='post'>
-      <input type="text" name="name" placeholder="Ваше имя">
-      <input type="text" name="name" placeholder="Ваш телефон">
-      <input type="submit" value="Отправить">
+      <input type="text" name="user_name" placeholder="Ваше имя">
+      <input type="text" name="user_phone" placeholder="Ваш телефон">
+      <input type="hidden" name="code" value="" id="code"/>
+      <input type="submit" id="form_btn" value="Отправить">
     </form>
   </div>
 </div>
 
 
 <!-- Slider -->
-<div class="slider-container">
+<div class="slider-container" id="slider">
     <div class="slider-control left inactive"></div>
     <div class="slider-control right"></div>
     <ul class="slider-pagi"></ul>
@@ -370,6 +373,36 @@
       
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <img src="img/logo-black.jpg" alt="" width="140px" height="140px">
+        </div>
+
+        <div class="footer__nav">
+          <a class="footer__link" href="#home">Домой</a>
+          <a class="footer__link" href="#about">О нас</a>
+          <a class="footer__link" href="#equipment">Оборудование</a>
+          <a class="footer__link" href="#slider">Галерея</a>
+          <a class="footer__link" href="#footer">Контакты</a>
+        </div>
+
+        <div class="contacts">
+          <div class="social__item">
+          <span><a href="https://vk.com/artsoundspb" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></span>
+          <span><a href="https://www.instagram.com/artsoundspb/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+          <div class="number">
+            <div>TEL. +7(952)359-86-00</div>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
 
   
 
