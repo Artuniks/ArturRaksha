@@ -1,3 +1,5 @@
+//Slider//
+
 $(document).ready(function() {
   
   var $slider = $(".slider"),
@@ -158,7 +160,7 @@ let popup = document.querySelector('.popups__inner'),
     }
 
 
-    //Check spam mail//
+//Check spam mail//
     let code = document.querySelector('#code'); // Получаем скрытый input
         document.getElementById('form_btn').onclick = function(){ // Клик по кнопке отправки
         code.value = 'NOSPAM'; // Подставляем значение в value инпута

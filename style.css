@@ -161,7 +161,7 @@ p {
     position: absolute;
     width: 392px;
     height: 78px;
-    bottom: -1015px;
+    bottom: -105%;
     left: 50%;
     margin-left: -196px;
     z-index: 100;
@@ -189,21 +189,27 @@ p {
     background-color: #0c0527;
     justify-content: space-around;
 }
+
+.card_container{
+  text-align: center;
+}
 .card{
   text-align: center;
   margin-bottom: 30px;
 }
+
 .card__inner {
     flex: initial;
     position: relative;
-    height: 52rem;
-    width: 48rem;
+    height: 36rem;
+    width: 32rem;
     -moz-perspective: 200rem;
     perspective: 200rem;
     margin: 50px 0;
   }
+
   .card__side {
-    height: 52rem;
+    height: 36rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -231,38 +237,13 @@ p {
   .card:hover .card__side--front {
     transform: rotateY(-180deg);
   }
-  .card__theme {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 54%;
-    width: 90%;
-    text-align: center;
-  }
-  .card__theme-box {
-    color: #fff;
-    margin-bottom: 8rem;
-  }
-  .card__subject {
-    font-family: "Inconsolata", monospace;
-    letter-spacing: 0.8rem;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-  .card__title {
-    font-family: "VT323", monospace;
-    text-transform: uppercase;
-    font-size: 6rem;
-    font-weight: 100;
-  }
   .card__cover_back {
+    margin-bottom: -30px;
     position: relative;
     background-size: cover;
-    height: 14rem;
+    height: 10rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background: linear-gradient(to right, #cc1573, #5722a9);
@@ -271,7 +252,7 @@ p {
     text-align: center;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
@@ -279,10 +260,10 @@ p {
   .card__cover_front {
     position: absolute;
     bottom: 0;
-    height: 14rem;
+    height: 10rem;
     width: 100%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0% 30%, 100% 30%, 100% 100%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background: linear-gradient(to right, #cc1573, #5722a9);
@@ -291,14 +272,14 @@ p {
     text-align: center;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 90%;
   }
   .card__heading-span {
     font-family: "VT323", monospace;
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     font-weight: 300;
     text-transform: uppercase;
     padding: 1rem 1.5rem;
@@ -306,7 +287,7 @@ p {
   }
   .card__details {
     font-family: "Inconsolata", monospace;
-    padding: 4rem 2rem;
+    
   }
   .card__details ul {
     list-style: none;
@@ -315,18 +296,21 @@ p {
   }
   .card__details ul li {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     padding: 1rem;
   }
   .card__details ul li:not(:last-child) {
     border-bottom: 1px solid #eee;
   }
   @media only screen and (max-width: 37.5em), only screen and (hover: none) {
-    .card {
-      height: auto;
+    .card__inner {
+      height: 783px;
       border-radius: 3px;
       background-color: #fff;
       box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+    }
+    .card__cover_front{
+      display: none;
     }
     .card__side {
       height: auto;
@@ -334,7 +318,7 @@ p {
       box-shadow: none;
     }
     .card__side--front {
-      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     .card__side--back {
       transform: rotateY(0);
@@ -456,10 +440,7 @@ a.close_popup{
 
   
   /* Slider===========*/
-svg {
-    display: block;
-    overflow: visible;
-  }
+
   
   .slider-container {
     position: relative;
@@ -691,6 +672,7 @@ svg {
 .footer {
   display: flex;
   padding: 70px 0;
+  background-color: #0E0A1D;
 }
 
 .footer__inner {
@@ -709,19 +691,23 @@ svg {
   font-size: 48px;
   padding: 10px;
   cursor: pointer;
-  color: #000000;
+  color: #fff;
+  opacity: 0.8;
 }
 
 .fa:hover {
-  opacity: 0.8;
+  opacity: 1;
+  transition: 0.2s;
 }
 
 .number {
 display: flex;
+color: #fff;
 font-size: 18px;
 font-family: sans-serif;
 font-weight: 700;
 align-items: center;
+opacity: 0.8;
 }
 
 .social__item {
@@ -735,7 +721,7 @@ align-items: center;
 
 .footer__link {
   margin-left: 50px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   opacity: 0.8;
   text-transform: uppercase;
@@ -744,4 +730,93 @@ align-items: center;
 .footer__link:hover {
   opacity: 1;
   transition: 0.2s;
+}
+
+
+/* Media===========*/
+
+.burger {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 9px 2px;
+}
+
+.burger__item {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  font-size: 0;
+  color: transparent;
+  position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  }
+
+  .burger__item:before {
+    top: -8px;
+  }
+
+  .burger__item:after {
+    bottom: -8px;
+  }
+
+/* Media===========*/
+
+@media (max-width: 1400px) {
+.about_us {
+  background-image: none;
+  height: 300px;
+  }
+
+.about_us_text {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: auto;
+}
+.Block_name__about__us {
+  display: none;
+}
+
+.Block_name__equipment {
+  display: none;
+}
+
+}
+
+@media (max-width: 767px) {
+  
+
+/* Nav */
+.nav {
+  display: none;
+}
+
+.intro {
+  height: auto;
+  padding-top: 130px;
+  padding-bottom: 30px;
+}
+
+.intro__title {
+  font-size: 30px;
+}
+
+/* Burger */
+.burger {
+  display: block;
+}
 }

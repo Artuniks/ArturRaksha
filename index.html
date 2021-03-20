@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>ART SOUND</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -26,6 +27,10 @@
                 <a class="nav__link" href="#slider">Галерея</a>
                 <a class="nav__link" href="#footer">Контакты</a>
             </nav>
+            <button class="burger" type="button">
+              <span class="burger__item">menu</span>
+            </button>
+
          </div>
     </div>
 </header>
@@ -54,6 +59,7 @@
      <p class="about_us_text">Наша компания занимается техническим обеспечением мероприятий разного направления в городе Санкт-Петербург. Мы предоставляем техническую поддержку  банкетов, корпоративов, выступлений музыкальных коллективов. Так же в наличии имеется проекционное оборудование, что позволяет нам технически сопровождать презентации, тренинги, мастер-классы.</p>
 </div>
     
+<!-- gradients line-->
 <div class="gradients"></div>
 
 <!-- Block name equipment -->
@@ -67,6 +73,7 @@
 
   
 <!-- Card-1 -->
+<div class="card_container">
 <div class="card">
     <div class="card__inner">
 
@@ -96,18 +103,16 @@
             </h4>
            </div>
             <img class="card__image" src="img/Equipment/Equipment-1.jpg" alt="" width="100%" height="100%">
-         <div class="card__theme">
-          <div class="card__theme-box">
-           <p class="card__subject"></p>
-           <p class="card__title"></p>
-          </div>
          </div>
-        </div>
          </div>
-         <button type="button" class="myBtn" id="button1">Заказать</button>
-    </div>
-    
+</div>
+    <div>
+    <button type="button" class="myBtn" id="button1">Заказать</button>
+  </div>
+
+</div>
 <!-- Card-2 -->
+<div class="card_container">
 <div class="card">
   <div class="card__inner">
 
@@ -136,19 +141,18 @@
         </h4>
        </div>
         <img class="card__image" src="img/Equipment/Equipment-3.jpg" alt="" width="100%" height="100%">
-     <div class="card__theme">
-      <div class="card__theme-box">
-       <p class="card__subject"></p>
-       <p class="card__title"></p>
-      </div>
-     </div>
     </div>
-  </div>
+  </div>  
+</div>
+
+<div>
   <button type="button" class="myBtn" id="button2">Заказать</button>
 </div>
 
+</div>
 
 <!-- Card-3 -->
+<div class="card_container">
        <div class="card">
          <div class="card__inner">
 
@@ -178,19 +182,19 @@
             </h4>
            </div>
             <img class="card__image" src="img/Equipment/Equipment-2.jpg" alt="" width="100%" height="100%">
-         <div class="card__theme">
-          <div class="card__theme-box">
-           <p class="card__subject"></p>
-           <p class="card__title"></p>
-          </div>
-         </div>
         </div>
       </div>
-      <button type="button" class="myBtn" id="button3">Заказать</button>
-       </div>
+</div>
+
+<div>
+  <button type="button" class="myBtn" id="button3">Заказать</button>
+</div>
+
+</div>
 
 
 <!-- Card-4 -->
+<div class="card_container">
        <div class="card">
          <div class="card__inner">
 
@@ -222,16 +226,14 @@
             </h4>
            </div>
             <img class="card__image" src="img/Equipment/Equipment-4.jpg" alt="" width="100%" height="100%">
-         <div class="card__theme">
-          <div class="card__theme-box">
-           <p class="card__subject"></p>
-           <p class="card__title"></p>
-          </div>
-         </div>
         </div>
       </div>
-      <button type="button" class="myBtn" id="button4">Заказать</button>
-       </div>
+</div>
+
+<div>
+<button type="button" class="myBtn" id="button4">Заказать</button>
+</div>
+</div>
     
 
 </div>
@@ -261,114 +263,34 @@
     <div class="slider">
       <div class="slide slide-0 active">
         <div class="slide__bg"></div>
-        <div class="slide__content">
-          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-          </svg>
-          <div class="slide__text">
-            <h2 class="slide__text-heading">Project name 1</h2>
-            <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a class="slide__text-link">Project link</a>
-          </div>
-        </div>
       </div>
 
       <div class="slide slide-1 ">
         <div class="slide__bg"></div>
-        <div class="slide__content">
-          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-          </svg>
-          <div class="slide__text">
-            <h2 class="slide__text-heading">Project name 2</h2>
-            <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a class="slide__text-link">Project link</a>
-          </div>
-        </div>
       </div>
 
       <div class="slide slide-2">
         <div class="slide__bg"></div>
-        <div class="slide__content">
-          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-          </svg>
-          <div class="slide__text">
-            <h2 class="slide__text-heading">Project name 3</h2>
-            <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a class="slide__text-link">Project link</a>
-          </div>
-        </div>
       </div>
 
       <div class="slide slide-3">
         <div class="slide__bg"></div>
-        <div class="slide__content">
-          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-          </svg>
-          <div class="slide__text">
-            <h2 class="slide__text-heading">Project name 4</h2>
-            <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a class="slide__text-link">Project link</a>
-          </div>
-        </div>
       </div>
 
       <div class="slide slide-4">
         <div class="slide__bg"></div>
-        <div class="slide__content">
-          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-          </svg>
-          <div class="slide__text">
-            <h2 class="slide__text-heading">Project name 5</h2>
-            <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a class="slide__text-link">Project link</a>
-          </div>
-        </div>
       </div>
 
       <div class="slide slide-5">
         <div class="slide__bg"></div>
-        <div class="slide__content">
-          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-          </svg>
-          <div class="slide__text">
-            <h2 class="slide__text-heading">Project name 6</h2>
-            <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a class="slide__text-link">Project link</a>
-          </div>
-        </div>
       </div>
 
       <div class="slide slide-6">
         <div class="slide__bg"></div>
-        <div class="slide__content">
-          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-          </svg>
-          <div class="slide__text">
-            <h2 class="slide__text-heading">Project name 7</h2>
-            <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a class="slide__text-link">Project link</a>
-          </div>
-        </div>
       </div>
 
       <div class="slide slide-7">
         <div class="slide__bg"></div>
-        <div class="slide__content">
-          <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-          </svg>
-          <div class="slide__text">
-            <h2 class="slide__text-heading">Project name 8</h2>
-            <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a class="slide__text-link">Project link</a>
-          </div>
-        </div>
       </div>
       
     </div>
@@ -379,7 +301,7 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__logo">
-          <img src="img/logo-black.jpg" alt="" width="140px" height="140px">
+          <img src="img/logo.png" alt="" width="140px" height="140px">
         </div>
 
         <div class="footer__nav">
